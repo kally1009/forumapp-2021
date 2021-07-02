@@ -1,0 +1,25 @@
+{
+  "name": "forumapp-2021",
+  "version": "1.0.0",
+  "description": "CodeSchool Forum App",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kally1009/forumapp-2021.git"
+  },
+  "author": "Kalicia Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kally1009/forumapp-2021/issues"
+  },
+  "homepage": "https://github.com/kally1009/forumapp-2021#readme"
+}
