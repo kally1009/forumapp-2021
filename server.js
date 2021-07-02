@@ -3,7 +3,6 @@ const cors = require("cors");
 const app= express();
 
 
-
 app.use(cors());
 app.use(express.json({}));
 app.use((req, res, next)=>{
@@ -16,22 +15,43 @@ app.use((req, res, next)=>{
 
 
 //GET /forum
-app.get('/todo',(req, res)=>{
+app.get('/forum',(req, res)=>{
     res.setHeader("Content-Type","application/json");
     console.log("Getting Threads");
-    thread (function(err,threads){
-        if(err){
-            console.log(`there was an error listing todos`,err);
-            res.status(500).json({
-                message: `unable to list todos`, error: err 
-            });
-            return;
-        }
-        res.status(200).json(threads);
-    });
+    res.status(200);
+    //thread (function(err,threads){
+      //  if(err){
+       //     console.log(`there was an error listing Threads`,err);
+       //     res.status(500).json({
+        //        message: `unable to list todos`, error: err 
+        //    });
+        //    return;
+       // }
+      //  res.status(200).json(threads);
+   // });`
+});
+
+app.get('/forum/:id',(req,res)=>{
+    res.setHeader("Content-Type","application/json");
+    console.log("Getting Threads");
+    res.status(200);
 })
 
+app.post('/thread',(req,res)=>{
 
+});
+
+app.delete('/thread/:id',(req,res)=>{
+
+});
+
+app.post('/post',(req,res)=>{
+
+});
+
+app.delete('/post/:thread_id/:post_id', (req,res)=>{
+
+});
 //GET /forum/:id
 
 //POST /thread
