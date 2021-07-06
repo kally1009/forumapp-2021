@@ -1,1 +1,5 @@
-//put schemas here
+const mongoose = require("mongoose");
+
+const threadSchema = mongoose.Schema({
+    
+})

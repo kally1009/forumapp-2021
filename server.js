@@ -60,14 +60,5 @@ app.delete('/post/:thread_id/:post_id', (req,res)=>{
     console.log(`deleting post of a thread ${req.params.thread_id} post ${req.params.post_id}`);
     res.json([]);
 });
-//GET /forum/:id
-
-//POST /thread
-
-//DELETE /thread/:id
-
-//POST /post
-
-//DELETE /post/:thread_id/:post_id
 
 module.exports= app;
