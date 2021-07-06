@@ -14,11 +14,11 @@ app.use((req, res, next)=>{
 })
 
 
-//GET /forum
-app.get('/forum',(req, res)=>{
+//GET /thread
+app.get('/thread',(req, res)=>{
     res.setHeader("Content-Type","application/json");
     console.log("Getting Threads");
-    res.status(200);
+    res.json([]);
     //thread (function(err,threads){
       //  if(err){
        //     console.log(`there was an error listing Threads`,err);
@@ -31,26 +31,34 @@ app.get('/forum',(req, res)=>{
    // });`
 });
 
-app.get('/forum/:id',(req,res)=>{
+app.get('/thread/:id',(req,res)=>{
     res.setHeader("Content-Type","application/json");
-    console.log("Getting Threads");
-    res.status(200);
+    console.log(`Getting Threads with id ${req.params.id}`);
+    res.json([]);
 })
 
 app.post('/thread',(req,res)=>{
-
+    res.setHeader("Content-Type","application/json");
+    console.log(`New Thread`);
+    res.json([]);
 });
 
 app.delete('/thread/:id',(req,res)=>{
-
+    res.setHeader("Content-Type","application/json");
+    console.log(`Deleting Thread ${req.params.id}`);
+    res.json([]);
 });
 
 app.post('/post',(req,res)=>{
-
+    res.setHeader("Content-Type","application/json");
+    console.log(`creating new post`);
+    res.json([]);
 });
 
 app.delete('/post/:thread_id/:post_id', (req,res)=>{
-
+    res.setHeader("Content-Type","application/json");
+    console.log(`deleting post of a thread ${req.params.thread_id} post ${req.params.post_id}`);
+    res.json([]);
 });
 //GET /forum/:id
 
