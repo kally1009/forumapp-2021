@@ -112,7 +112,7 @@ var app = new Vue({
                         alert(data.msg)
                     })
                     
-                }else if(response.status == 200){
+                }else if(response.status == 201){
                     app.post_author="";
                     app.post_body="";
                     app.getPosts(thread_id)
