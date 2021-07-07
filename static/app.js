@@ -1,4 +1,4 @@
-var url = "http://forum2021.codeschool.cloud"
+var url = "https://code-school-forum-app.herokuapp.com"
 var app = new Vue({
     el: "#app",
     data: {
